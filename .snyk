@@ -1,0 +1,29 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.22.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - falcor-hapi > boom > hoek:
+        patched: '2022-01-17T14:11:18.890Z'
+    - falcor-hapi > joi > hoek:
+        patched: '2022-01-17T14:11:18.890Z'
+    - falcor-hapi > joi > topo > hoek:
+        patched: '2022-01-17T14:11:18.890Z'
+    - hapi > subtext > content > hoek:
+        patched: '2022-01-17T14:11:18.890Z'
+    - hapi > subtext > pez > content > hoek:
+        patched: '2022-01-17T14:11:18.890Z'
+  'npm:http-signature:20150122':
+    - azure-mgmt-storage > azure-common > request > http-signature:
+        patched: '2022-01-17T14:11:18.890Z'
+  'npm:mime:20170907':
+    - falcor-router-demo > pouchdb > request > mime:
+        patched: '2022-01-17T14:11:18.890Z'
+    - azure-mgmt-storage > azure-common > request > form-data > mime:
+        patched: '2022-01-17T14:11:18.890Z'
+    - falcor-router-demo > pouchdb > request > form-data > mime:
+        patched: '2022-01-17T14:11:18.890Z'
+  'npm:tunnel-agent:20170305':
+    - azure-mgmt-storage > azure-common > request > tunnel-agent:
+        patched: '2022-01-17T14:11:18.890Z'
